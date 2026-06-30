@@ -2,7 +2,7 @@
 
 Official implementation of **CAdam**, accepted to **SIGGRAPH 2026 Conference Papers**.
 
-- Project page: https://teclados078.github.io/cadam/
+- Project page: https://teclados078.github.io/CAdam/
 - arXiv: https://arxiv.org/abs/2605.20872
 - Paper: Coming after SIGGRAPH 2026
 - Talk: Coming after SIGGRAPH 2026
