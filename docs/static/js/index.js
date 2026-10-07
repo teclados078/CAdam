@@ -74,13 +74,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Preserve the original five-second automatic results carousel.
   if (typeof bulmaCarousel !== 'undefined') {
-    bulmaCarousel.attach('#results-carousel', {
+    const carousels = bulmaCarousel.attach('#results-carousel', {
       slidesToScroll: 1,
       slidesToShow: 1,
       loop: true,
-      infinite: true,
+      infinite: false,
+      breakpoints: [],
       autoplay: true,
       autoplaySpeed: 5000
+    });
+    // The bundled carousel only resizes when its slide count changes.
+    // Keep one result per view and refresh widths without cloning slides.
+    let resizeFrame;
+    window.addEventListener('resize', () => {
+      cancelAnimationFrame(resizeFrame);
+      resizeFrame = requestAnimationFrame(() => {
+        carousels.forEach(carousel => {
+          carousel._setDimensions();
+          carousel.transitioner.apply(true);
+        });
+      });
     });
   }
 });
