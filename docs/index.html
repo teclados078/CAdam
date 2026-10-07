@@ -18,7 +18,7 @@
   <meta property="og:title" content="CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation">
   <meta property="og:description" content="CAdam introduces context-adaptive moment estimation for 3D Gaussian densification in generative distillation.">
   <meta property="og:url" content="https://teclados078.github.io/CAdam/">
-  <meta property="og:image" content="https://teclados078.github.io/CAdam/static/images/teaser.png">
+  <meta property="og:image" content="https://teclados078.github.io/CAdam/static/images/social-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="CAdam - Research Preview">
@@ -30,13 +30,9 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
   <meta name="twitter:title" content="CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation">
   <meta name="twitter:description" content="CAdam introduces context-adaptive moment estimation for 3D Gaussian densification in generative distillation.">
-  <meta name="twitter:image" content="https://teclados078.github.io/CAdam/static/images/teaser.png">
+  <meta name="twitter:image" content="https://teclados078.github.io/CAdam/static/images/social-preview.jpg">
   <meta name="twitter:image:alt" content="CAdam - Research Preview">
 
   <!-- Academic/Research Specific -->
@@ -48,7 +44,7 @@
   <meta name="citation_publication_date" content="2026/07/19">
   <meta name="citation_conference_title" content="SIGGRAPH 2026 Conference Papers">
   <meta name="citation_doi" content="10.1145/3799902.3811215">
-  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2605.20872">
+  <meta name="citation_pdf_url" content="https://teclados078.github.io/CAdam/static/pdfs/CAdam_Paper.pdf">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -59,45 +55,33 @@
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
   <title>CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation | SIGGRAPH 2026</title>
   
   <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="static/images/favicon.png">
+  <link rel="apple-touch-icon" href="static/images/favicon.png">
+  <link rel="canonical" href="https://teclados078.github.io/CAdam/">
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20261007">
   
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
   
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/index.js?v=20261007"></script>
   
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
@@ -147,9 +131,9 @@
       "name": "Association for Computing Machinery"
     },
     "url": "https://teclados078.github.io/CAdam/",
-    "image": "https://teclados078.github.io/CAdam/static/images/teaser.png",
+    "image": "https://teclados078.github.io/CAdam/static/images/social-preview.jpg",
     "keywords": ["CAdam", "3D Gaussian Splatting", "densification", "generative distillation", "computer graphics", "computer vision"],
-    "abstract": "CAdam addresses inefficient Gaussian growth in optimization-based generative distillation by treating densification as signal verification. It uses context-adaptive moment estimation and SNR-based gating to separate persistent geometry signals from stochastic guidance noise, reducing Gaussian counts while preserving perceptual quality.",
+    "abstract": "Adaptive densification is the engine of 3D Gaussian Splatting (3DGS). However, when transposed to the optimization-based Generative Distillation paradigm, this reconstruction-native mechanism reveals fundamental limitations, resulting in inefficient representations cluttered with redundant primitives. We diagnose this failure as a Densification Dilemma stemming from the stochastic nature of generative guidance: the standard magnitude-based accumulation indiscriminately aggregates transient noise alongside geometric signals, making it difficult to strike a balance between over-densification and under-fitting. To resolve this, we introduce Context-Adaptive Moment Estimation (CAdam), a novel framework that reinterprets densification as a statistically grounded signal verification problem. CAdam leverages the first moment of gradients to exploit the interference principle—where stochastic fluctuations cancel out via destructive interference while consistent geometric drifts accumulate via constructive interference—effectively disentangling the underlying signal from the generative noise floor. This is further augmented by a quantile-based context awareness and an intrinsic Signal-to-Noise Ratio (SNR) gating mechanism, which ensure robust adaptation across optimization stages and enable the soft termination of densification. Extensive experiments across diverse objectives (SDS, ISM, VFDS) and strong generative 3DGS backbones show that CAdam reduces Gaussian count by 85%–97% relative to standard densification while preserving overall comparable perceptual quality. These results highlight signal-aware density control as a practical way to improve memory efficiency in optimization-based generative distillation.",
     "sameAs": ["https://doi.org/10.1145/3799902.3811215", "https://arxiv.org/abs/2605.20872"],
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -170,19 +154,9 @@
   }
   </script>
   
-  <!-- Website/Organization Structured Data -->
+  <!-- Research lab -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Kyung Hee University, Korea University",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"IIIXR Lab","url":"https://iiixr.korea.ac.kr/","logo":"https://teclados078.github.io/CAdam/static/images/iiixr-logo.webp"}
   </script>
 </head>
 <body>
@@ -190,56 +164,8 @@
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
+    <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
   </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container" hidden>
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -249,45 +175,22 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">SeungJeh Chung,</span>
-              <span class="author-block">Geonho Park,</span>
-              <span class="author-block">Misong Kim,</span>
-              <span class="author-block">HyeongYeop Kang</span>
+              <span class="author-block">SeungJeh Chung<sup>1</sup>,</span>
+              <span class="author-block">Geonho Park<sup>2</sup>,</span>
+              <span class="author-block">Misong Kim<sup>1</sup>,</span>
+              <span class="author-block">HyeongYeop Kang<sup>2,*</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Kyung Hee University, Korea University<br>SIGGRAPH 2026 Conference Papers</span>
+              <span class="author-block"><sup>1</sup>Kyung Hee University, <sup>2</sup>Korea University<br>SIGGRAPH 2026 Conference Papers</span>
             </div>
 
-            <div class="publication-links">
-              <span class="link-block">
-                <a href="https://dl.acm.org/doi/10.1145/3799902.3811215" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2605.20872" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-
-              <span class="link-block">
-                <a href="https://github.com/teclados078/CAdam" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
-
+            <div class="publication-links" aria-label="Paper resources">
+              <div class="resource-group"><span class="link-block"><a href="https://dl.acm.org/doi/10.1145/3799902.3811215" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><span>Paper</span></a></span><span class="link-block"><a href="https://arxiv.org/abs/2605.20872" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span>arXiv</span></a></span><span class="link-block"><a href="https://github.com/teclados078/CAdam" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-12-2 14"/></svg></span><span>Code</span></a></span></div>
+              <span class="link-divider" aria-hidden="true">|</span>
+              <div class="resource-group resource-pdfs"><span class="link-block"><a href="static/pdfs/CAdam_Paper.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><span>PDF (Paper)</span></a></span><span class="link-block"><a href="static/pdfs/CAdam_Supplementary.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark"><span class="icon"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span><span>PDF (Supp)</span></a></span></div>
             </div>
+            <p class="corresponding-author">* Corresponding author</p>
             <p class="is-size-6 has-text-grey">Implementation code has not yet been released in the repository.</p>
           </div>
         </div>
@@ -296,15 +199,36 @@
   </section>
 
 
-<!-- Teaser image-->
-<section class="hero teaser">
+<!-- Research overview -->
+<section class="hero teaser" id="overview" aria-label="Research overview">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="CAdam teaser figure" loading="eager"/>
+      <div class="intro-tabs" role="tablist" aria-label="Explore CAdam">
+        <button type="button" id="tab-overview" role="tab" aria-selected="true" aria-controls="panel-overview" data-view="overview">Overview</button>
+        <button type="button" id="tab-video" role="tab" aria-selected="false" aria-controls="panel-video" tabindex="-1" data-view="video">Video</button>
+        <button type="button" id="tab-poster" role="tab" aria-selected="false" aria-controls="panel-poster" tabindex="-1" data-view="poster">Poster</button>
+      </div>
+      <div class="media-stage">
+        <div id="panel-overview" class="media-panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="0">
+          <img src="static/images/overview.webp" width="2100" height="1400" alt="CAdam representative results: up to 97% fewer Gaussians, with rendered comparisons and additional generated objects" fetchpriority="high"/>
+        </div>
+        <div id="panel-video" class="media-panel" role="tabpanel" aria-labelledby="tab-video" tabindex="0" hidden>
+          <video id="cadam-video" controls playsinline muted preload="none" width="1920" height="1080" aria-label="CAdam SIGGRAPH fast-forward video">
+            <source src="static/videos/CAdam_ff.mp4" type="video/mp4">
+            <a href="static/videos/CAdam_ff.mp4">Open the CAdam video</a>
+          </video>
+        </div>
+        <div id="panel-poster" class="media-panel poster-panel" role="tabpanel" aria-labelledby="tab-poster" tabindex="0" hidden>
+          <a class="poster-preview" href="static/pdfs/CAdam_Poster.pdf" target="_blank" rel="noopener" aria-label="Open the full-size CAdam poster PDF">
+            <img src="static/images/poster.webp" width="1500" height="2121" alt="CAdam SIGGRAPH poster: motivation, method, optimization dynamics and threshold results" loading="lazy"/>
+          </a>
+          <a class="poster-link" href="static/pdfs/CAdam_Poster.pdf" target="_blank" rel="noopener">Open full-size poster (PDF)</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser image -->
+<!-- End research overview -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -313,12 +237,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Adaptive densification is central to 3D Gaussian Splatting, but the same mechanism becomes unreliable in optimization-based generative distillation. Because generative guidance is stochastic, standard magnitude-based densification tends to mix short-lived noise with persistent geometric cues, leading to redundant Gaussian primitives or under-fitting.
-          </p>
-          <p>
-            CAdam resolves this densification dilemma by reframing density control as a signal verification problem. It uses context-adaptive moment estimation to accumulate consistent gradient trends while suppressing stochastic fluctuations, then combines quantile-based context awareness with an intrinsic signal-to-noise gating mechanism. Across SDS, ISM, and VFDS objectives with strong generative 3DGS backbones, CAdam substantially reduces Gaussian count while maintaining comparable perceptual quality.
-          </p>
+          <p>Adaptive densification is the engine of 3D Gaussian Splatting (3DGS). However, when transposed to the optimization-based Generative Distillation paradigm, this reconstruction-native mechanism reveals fundamental limitations, resulting in inefficient representations cluttered with redundant primitives. We diagnose this failure as a Densification Dilemma stemming from the stochastic nature of generative guidance: the standard magnitude-based accumulation indiscriminately aggregates transient noise alongside geometric signals, making it difficult to strike a balance between over-densification and under-fitting. To resolve this, we introduce Context-Adaptive Moment Estimation (CAdam), a novel framework that reinterprets densification as a statistically grounded signal verification problem. CAdam leverages the first moment of gradients to exploit the interference principle—where stochastic fluctuations cancel out via destructive interference while consistent geometric drifts accumulate via constructive interference—effectively disentangling the underlying signal from the generative noise floor. This is further augmented by a quantile-based context awareness and an intrinsic Signal-to-Noise Ratio (SNR) gating mechanism, which ensure robust adaptation across optimization stages and enable the soft termination of densification. Extensive experiments across diverse objectives (SDS, ISM, VFDS) and strong generative 3DGS backbones show that CAdam reduces Gaussian count by 85%–97% relative to standard densification while preserving overall comparable perceptual quality. These results highlight signal-aware density control as a practical way to improve memory efficiency in optimization-based generative distillation.</p>
         </div>
       </div>
     </div>
@@ -328,20 +247,20 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small" id="results" aria-label="Results">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <img src="static/images/qualitative1.png" alt="CAdam qualitative results figure 1" loading="lazy"/>
+        <a href="static/images/results-comparison.webp" target="_blank" rel="noopener" aria-label="Enlarge the qualitative comparison"><img src="static/images/results-comparison.webp" width="2560" height="1885" alt="Qualitative comparison of standard densification and CAdam, including enlarged geometry details" loading="lazy"/></a>
         <h2 class="subtitle has-text-centered">
-          Qualitative results.
+          Qualitative comparison with standard densification.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/qualitative2.png" alt="CAdam qualitative results figure 2" loading="lazy"/>
+        <a href="static/images/results-multiview.webp" target="_blank" rel="noopener" aria-label="Enlarge the multi-view and depth results"><img src="static/images/results-multiview.webp" width="2560" height="2916" alt="Multi-view RGB renderings and depth maps of twelve CAdam results" loading="lazy"/></a>
         <h2 class="subtitle has-text-centered">
-          Qualitative results.
+          Multi-view RGB renderings and depth maps.
         </h2>
       </div>
   </div>
@@ -353,10 +272,7 @@
 
 
 
-<!-- Hidden until official SIGGRAPH 2026 materials are ready. -->
-<section id="video-presentation" class="hero is-small is-light" hidden></section>
-<section id="talk-carousel" class="hero is-small" hidden></section>
-<section id="paper-poster" class="hero is-small is-light" hidden></section>
+
 
 
 
@@ -366,7 +282,7 @@
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
         <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
+          <svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>
           <span class="copy-text">Copy</span>
         </button>
       </div>
@@ -392,10 +308,10 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
+          <a class="lab-brand" href="https://iiixr.korea.ac.kr/" target="_blank" rel="noopener"><img src="static/images/iiixr-logo.webp" width="224" height="240" alt="IIIXR Lab mascot" loading="lazy"/><span>IIIXR Lab</span></a>
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
@@ -405,11 +321,6 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>

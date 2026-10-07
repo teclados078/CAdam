@@ -418,6 +418,54 @@ code {
   content: "ied!";
 }
 
+/* Small additions to the existing project-page layout. */
+.ui-icon { width: 1.1em; height: 1.1em; display: inline-block; vertical-align: middle; }
+.publication-links,
+.resource-group { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px; }
+.publication-links .link-block { margin: 0; }
+.publication-links .link-block a { margin: 0; }
+.publication-links .button { width: auto; }
+.link-divider { margin: 0 5px; color: var(--text-light); }
+.publication-authors sup { font-size: 0.65em; margin-left: 2px; }
+.corresponding-author { font-size: 0.8rem; color: var(--text-secondary); margin-top: 12px; }
+.intro-tabs { display: flex; justify-content: center; gap: 24px; margin-bottom: 24px; }
+.intro-tabs button {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 8px 4px;
+  color: var(--text-secondary);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.intro-tabs button[aria-selected="true"] { color: var(--text-primary); border-bottom-color: var(--primary-color); }
+.intro-tabs button:focus-visible,
+.media-panel:focus-visible { outline: 2px solid var(--primary-color); outline-offset: 4px; }
+.media-stage { width: 100%; aspect-ratio: 3 / 2; }
+.media-panel { width: 100%; height: 100%; }
+.media-panel[hidden] { display: none !important; }
+.media-panel img,
+.media-panel video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.poster-panel { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.poster-preview { display: block; height: calc(100% - 34px); max-width: 100%; }
+.poster-preview img { width: auto; max-width: 100%; }
+.poster-link { font-size: 0.9rem; }
+.lab-brand { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 20px; font-weight: 600; }
+.lab-brand img { width: 68px; height: auto; }
+.results-carousel .item > a { display: block; }
+
+@media screen and (max-width: 640px) {
+  .publication-links { gap: 8px; }
+  .publication-links .button { margin: 0 !important; padding: 0.65rem 0.8rem !important; }
+  .resource-pdfs { flex-basis: 100%; }
+  .link-divider { display: none; }
+  .intro-tabs { gap: 20px; margin-bottom: 18px; }
+  .poster-link { font-size: 0.8rem; }
+  .content.has-text-justified { text-align: left !important; }
+}
+
 /* Scroll to Top Button */
 .scroll-to-top {
   position: fixed;
