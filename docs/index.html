@@ -22,7 +22,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="CAdam - Research Preview">
-  <meta property="article:published_time" content="2026-05-01T00:00:00.000Z">
+  <meta property="article:published_time" content="2026-07-19">
   <meta property="article:author" content="SeungJeh Chung">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="3D Gaussian Splatting">
@@ -45,8 +45,9 @@
   <meta name="citation_author" content="Park, Geonho">
   <meta name="citation_author" content="Kim, Misong">
   <meta name="citation_author" content="Kang, HyeongYeop">
-  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_publication_date" content="2026/07/19">
   <meta name="citation_conference_title" content="SIGGRAPH 2026 Conference Papers">
+  <meta name="citation_doi" content="10.1145/3799902.3811215">
   <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2605.20872">
   
   <!-- Additional SEO -->
@@ -119,7 +120,7 @@
         "name": "Geonho Park",
         "affiliation": {
           "@type": "Organization",
-          "name": "Kyung Hee University"
+          "name": "Korea University"
         }
       },
       {
@@ -127,7 +128,7 @@
         "name": "Misong Kim",
         "affiliation": {
           "@type": "Organization",
-          "name": "Korea University"
+          "name": "Kyung Hee University"
         }
       },
       {
@@ -139,16 +140,17 @@
         }
       }
     ],
-    "datePublished": "2026-05-01",
+    "datePublished": "2026-07-19",
+    "identifier": "https://doi.org/10.1145/3799902.3811215",
     "publisher": {
       "@type": "Organization",
-      "name": "SIGGRAPH 2026 Conference Papers"
+      "name": "Association for Computing Machinery"
     },
     "url": "https://teclados078.github.io/CAdam/",
     "image": "https://teclados078.github.io/CAdam/static/images/teaser.png",
     "keywords": ["CAdam", "3D Gaussian Splatting", "densification", "generative distillation", "computer graphics", "computer vision"],
     "abstract": "CAdam addresses inefficient Gaussian growth in optimization-based generative distillation by treating densification as signal verification. It uses context-adaptive moment estimation and SNR-based gating to separate persistent geometry signals from stochastic guidance noise, reducing Gaussian counts while preserving perceptual quality.",
-    "citation": "@inproceedings{chung2026cadam, title={CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation}, author={Chung, SeungJeh and Park, Geonho and Kim, Misong and Kang, HyeongYeop}, booktitle={SIGGRAPH 2026 Conference Papers}, year={2026}}",
+    "sameAs": ["https://doi.org/10.1145/3799902.3811215", "https://arxiv.org/abs/2605.20872"],
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
@@ -259,6 +261,15 @@
 
             <div class="publication-links">
               <span class="link-block">
+                <a href="https://dl.acm.org/doi/10.1145/3799902.3811215" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
                 <a href="https://arxiv.org/abs/2605.20872" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -276,33 +287,8 @@
                 </a>
               </span>
 
-              <span class="link-block">
-                <button class="external-link button is-normal is-rounded is-dark" disabled title="Available after SIGGRAPH 2026">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </button>
-              </span>
-
-              <span class="link-block">
-                <button class="external-link button is-normal is-rounded is-dark" disabled title="Available after SIGGRAPH 2026">
-                  <span class="icon">
-                    <i class="fas fa-video"></i>
-                  </span>
-                  <span>Talk</span>
-                </button>
-              </span>
-
-              <span class="link-block">
-                <button class="external-link button is-normal is-rounded is-dark" disabled title="Available after SIGGRAPH 2026">
-                  <span class="icon">
-                    <i class="fas fa-image"></i>
-                  </span>
-                  <span>Poster</span>
-                </button>
-              </span>
             </div>
+            <p class="is-size-6 has-text-grey">Implementation code has not yet been released in the repository.</p>
           </div>
         </div>
       </div>
@@ -385,12 +371,15 @@
         </button>
       </div>
       <pre id="bibtex-code"><code>@inproceedings{chung2026cadam,
-  title={CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation},
+  title={{CAdam}: Context-Adaptive Moment Estimation for {3D Gaussian} Densification in Generative Distillation},
   author={Chung, SeungJeh and Park, Geonho and Kim, Misong and Kang, HyeongYeop},
-  booktitle={SIGGRAPH 2026 Conference Papers},
+  booktitle={Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers},
+  series={SIGGRAPH Conference Papers '26},
   year={2026},
-  url={https://arxiv.org/abs/2605.20872},
-  code={https://github.com/teclados078/CAdam}
+  publisher={Association for Computing Machinery},
+  pages={1--12},
+  doi={10.1145/3799902.3811215},
+  url={https://doi.org/10.1145/3799902.3811215}
 }</code></pre>
     </div>
 </section>
