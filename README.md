@@ -1,6 +1,6 @@
 # CAdam: Context-Adaptive Moment Estimation for 3D Gaussian Densification in Generative Distillation
 
-Official repository for **CAdam**, published in **SIGGRAPH 2026 Conference Papers**.
+Implementation repository for **CAdam**, published in **SIGGRAPH 2026 Conference Papers**. The code release is being prepared.
 
 - [Paper](https://dl.acm.org/doi/10.1145/3799902.3811215)
 - [arXiv](https://arxiv.org/abs/2605.20872)
@@ -8,18 +8,9 @@ Official repository for **CAdam**, published in **SIGGRAPH 2026 Conference Paper
 
 ## Code Status
 
-This repository currently contains the project website and research overview. The implementation has not been released in this repository.
+This repository currently contains only this README. Implementation files will be added after the demo is finalized.
 
-## Overview
-
-CAdam is a signal-aware densification framework for optimization-based generative 3D Gaussian Splatting. It addresses the densification dilemma caused by stochastic generative guidance, where gradient-magnitude accumulation can confuse transient noise with meaningful geometric signals.
-
-CAdam verifies coherent structural signals using momentum, applies context-adaptive quantile and intrinsic-SNR gating, and selectively refines only reliable Gaussian primitives.
-
-## News
-
-- 2026-07-19: Paper published in SIGGRAPH 2026 Conference Papers.
-- 2026-05-20: arXiv version released.
+The [project website](https://teclados078.github.io/CAdam/) is maintained separately in [teclados078.github.io/CAdam](https://github.com/teclados078/teclados078.github.io/tree/main/CAdam).
 
 ## Citation
 
