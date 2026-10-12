@@ -10,8 +10,6 @@ Implementation repository for **CAdam**, published in **SIGGRAPH 2026 Conference
 
 This repository currently contains only this README. Implementation files will be added after the demo is finalized.
 
-The [project website](https://teclados078.github.io/CAdam/) is maintained separately in [teclados078.github.io/CAdam](https://github.com/teclados078/teclados078.github.io/tree/main/CAdam).
-
 ## Citation
 
 ```bibtex
